@@ -1,3 +1,5 @@
+<img width="974" height="847" alt="image" src="https://github.com/user-attachments/assets/751b5476-6d0b-4e8d-aea2-cdc2ba3100c0" />
+
 # Small Business AI Tools
 
 Practical, dependency-free tools and templates to help small businesses improve **lead management**, **sales follow-up**, **customer communication**, **customer segmentation**, and **operational clarity**.
