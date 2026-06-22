@@ -1,0 +1,15 @@
+{
+  "name": "Alex Rivera",
+  "company": "Rivera Logistics",
+  "email": "alex@riveralogistics.example",
+  "role": "Operations Director",
+  "source": "website contact form",
+  "problemSummary": "Manual order tracking across email and spreadsheets causes delays and missed follow-ups.",
+  "budgetRange": "mid",
+  "timeline": "1-3-months",
+  "decisionMaker": true,
+  "engagementLevel": "high",
+  "productFit": "strong",
+  "lastContactDate": "2026-06-15",
+  "notes": "Requested a demo. Mentioned two similar vendors but prefers a custom workflow."
+}

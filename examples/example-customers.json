@@ -1,0 +1,47 @@
+[
+  {
+    "id": "cust-001",
+    "name": "Greenfield Dental",
+    "industry": "healthcare",
+    "monthlyValue": 1200,
+    "lastPurchaseDaysAgo": 14,
+    "supportTicketsLast90Days": 1,
+    "lifecycleStage": "active"
+  },
+  {
+    "id": "cust-002",
+    "name": "Northside Property Group",
+    "industry": "real-estate",
+    "monthlyValue": 450,
+    "lastPurchaseDaysAgo": 120,
+    "supportTicketsLast90Days": 0,
+    "lifecycleStage": "at-risk"
+  },
+  {
+    "id": "cust-003",
+    "name": "Craft Studio Co.",
+    "industry": "retail",
+    "monthlyValue": 2800,
+    "lastPurchaseDaysAgo": 7,
+    "supportTicketsLast90Days": 3,
+    "lifecycleStage": "active"
+  },
+  {
+    "id": "cust-004",
+    "name": "Summit Legal Partners",
+    "industry": "professional-services",
+    "monthlyValue": 8900,
+    "lastPurchaseDaysAgo": 21,
+    "supportTicketsLast90Days": 2,
+    "lifecycleStage": "active"
+  },
+  {
+    "id": "cust-005",
+    "name": "Bright Start Tutoring",
+    "industry": "education",
+    "monthlyValue": 150,
+    "lastPurchaseDaysAgo": 200,
+    "supportTicketsLast90Days": 0,
+    "lifecycleStage": "dormant"
+  }
+]
