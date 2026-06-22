@@ -42,6 +42,11 @@ If you sell services, software, or high-consideration products and manage leads 
 | [Lead Score Calculator](./tools/lead-score-calculator/) | Score a lead 0–100 from structured fields (budget, timeline, fit, engagement) |
 | [Follow-Up Message Generator](./tools/follow-up-message-generator/) | Generate professional follow-up drafts by scenario (initial, reminder, post-call, no-response) |
 | [Customer Segmentation (Basic)](./tools/customer-segmentation-basic/) | Group customers into segments using simple, transparent rules |
+| [Business Readiness Check](./tools/business-readiness-check/) | Assess operational readiness for simple automation (0–100 score with actions) |
+| [Follow-Up Schedule Planner](./tools/follow-up-schedule-planner/) | Build a dated follow-up schedule from lead status, urgency, and last contact |
+| [Customer Data Quality Check](./tools/customer-data-quality-check/) | Verify whether a record has enough information for effective follow-up |
+| [Customer Response Classifier](./tools/customer-response-classifier/) | Classify customer replies with transparent, rule-based categories |
+| [Simple ROI Estimator](./tools/simple-roi-estimator/) | Estimate monthly and annual revenue lift from improved conversion |
 
 Each tool has its own README with usage examples.
 
@@ -66,6 +71,26 @@ Each tool has its own README with usage examples.
 ### Examples (`/examples`)
 
 - [`example-lead.json`](./examples/example-lead.json) — sample input for the lead tools
+- [`example-customers.json`](./examples/example-customers.json) — sample customer list for segmentation
+- [`example-business-readiness.json`](./examples/example-business-readiness.json) — readiness assessment input
+- [`example-follow-up-schedule.json`](./examples/example-follow-up-schedule.json) — schedule planner input
+- [`example-customer-record.json`](./examples/example-customer-record.json) — data quality check input
+- [`example-customer-response.json`](./examples/example-customer-response.json) — response classifier input
+- [`example-roi.json`](./examples/example-roi.json) — ROI estimator input
+- [`run-examples.js`](./examples/run-examples.js) — run all tools with fictional data
+
+---
+
+## v0.2.0 practical utilities
+
+Release **v0.2.0** adds five dependency-free utilities for everyday small business operations:
+
+- **Readiness and planning** — assess whether your process can support automation, then generate a follow-up schedule
+- **Data quality** — confirm records are complete before outreach
+- **Response handling** — classify inbound replies with auditable rules
+- **Business case** — estimate revenue lift from better follow-up or conversion
+
+All new tools export functions for programmatic use, include CLI demos, and ship with fictional examples and tests. No CRM, dashboard, authentication, database, or external API required.
 
 ---
 
@@ -97,6 +122,48 @@ node tools/customer-segmentation-basic/index.js examples/example-customers.json
 ```
 
 Copy any file from `/templates` into your workflow and adapt the placeholders (`[Company]`, `[Name]`, etc.).
+
+### npm quick start
+
+No `npm install` required — scripts invoke Node.js directly against local files.
+
+```bash
+git clone https://github.com/Novapro-Lab/small-business-ai-tools.git
+cd small-business-ai-tools
+npm run examples          # run all tools with fictional data
+npm run example:lead-score
+npm run example:business-readiness
+npm test
+```
+
+### Available scripts
+
+| Script | Description |
+| --- | --- |
+| `npm run example:lead-score` | Score a sample lead |
+| `npm run example:follow-up` | Generate a reminder follow-up draft |
+| `npm run example:segmentation` | Segment a sample customer list |
+| `npm run example:business-readiness` | Run the readiness assessment |
+| `npm run example:schedule` | Build a follow-up schedule |
+| `npm run example:data-quality` | Check sample record completeness |
+| `npm run example:response-classifier` | Classify a sample customer reply |
+| `npm run example:roi` | Estimate revenue lift from improved conversion |
+| `npm run examples` | Run all tools sequentially via `examples/run-examples.js` |
+| `npm test` | Run dependency-free tests in `/tests` |
+
+### Testing
+
+Tests use Node.js built-in `assert` and the built-in test runner — no Jest, Mocha, or other dependencies.
+
+```bash
+npm test
+```
+
+Individual test files live in `/tests` and can be run directly:
+
+```bash
+node --test tests/business-readiness-check.test.js
+```
 
 ---
 

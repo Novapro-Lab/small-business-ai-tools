@@ -1,0 +1,33 @@
+{
+  "name": "small-business-ai-tools",
+  "version": "0.2.0",
+  "description": "Dependency-free utilities and templates for small business lead management, follow-up, and operational clarity.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "example:lead-score": "node tools/lead-score-calculator/index.js examples/example-lead.json",
+    "example:follow-up": "node tools/follow-up-message-generator/index.js examples/example-lead.json reminder",
+    "example:segmentation": "node tools/customer-segmentation-basic/index.js examples/example-customers.json",
+    "example:business-readiness": "node tools/business-readiness-check/index.js examples/example-business-readiness.json",
+    "example:schedule": "node tools/follow-up-schedule-planner/index.js examples/example-follow-up-schedule.json",
+    "example:data-quality": "node tools/customer-data-quality-check/index.js examples/example-customer-record.json",
+    "example:response-classifier": "node tools/customer-response-classifier/index.js examples/example-customer-response.json",
+    "example:roi": "node tools/simple-roi-estimator/index.js examples/example-roi.json",
+    "examples": "node examples/run-examples.js",
+    "test": "node --test tests/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Novapro-Lab/small-business-ai-tools.git"
+  },
+  "keywords": [
+    "small-business",
+    "sales",
+    "lead-scoring",
+    "follow-up",
+    "automation",
+    "privacy-first"
+  ]
+}
