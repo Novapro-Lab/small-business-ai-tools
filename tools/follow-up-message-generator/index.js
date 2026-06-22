@@ -25,10 +25,15 @@ function firstName(fullName) {
   return fullName.trim().split(/\s+/)[0];
 }
 
+function normalizeProblemText(text) {
+  const value = (text || "the workflow challenges you mentioned").trim();
+  return value.replace(/[.!?]+\s*$/, "");
+}
+
 function buildMessage(lead, scenario) {
   const name = firstName(lead.name);
   const company = lead.company || "your team";
-  const problem = lead.problemSummary || "the workflow challenges you mentioned";
+  const problem = normalizeProblemText(lead.problemSummary);
 
   const templates = {
     initial: `Subject: Following up on your inquiry
@@ -135,4 +140,13 @@ function main() {
   console.log("\n---\nEdit placeholders before sending. A human should review every message.");
 }
 
-main();
+module.exports = {
+  buildMessage,
+  firstName,
+  normalizeProblemText,
+  SCENARIOS,
+};
+
+if (require.main === module) {
+  main();
+}

@@ -138,4 +138,15 @@ function main() {
   console.log("\nReview scores with your team. Adjust weights in index.js to match your business.");
 }
 
-main();
+module.exports = {
+  scoreLead,
+  WEIGHTS,
+  BUDGET_SCORES,
+  TIMELINE_SCORES,
+  FIT_SCORES,
+  ENGAGEMENT_SCORES,
+};
+
+if (require.main === module) {
+  main();
+}

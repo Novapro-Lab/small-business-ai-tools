@@ -150,4 +150,20 @@ function main() {
   }
 }
 
-main();
+function segmentCustomers(customers) {
+  return customers.map(segmentCustomer);
+}
+
+module.exports = {
+  segmentCustomer,
+  segmentCustomers,
+  valueTier,
+  engagementBand,
+  VALUE_TIERS,
+  AT_RISK_DAYS,
+  DORMANT_DAYS,
+};
+
+if (require.main === module) {
+  main();
+}
