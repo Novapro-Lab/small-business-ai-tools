@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://novaprolab.com">
-    <img src="assets/novapro-lab-logo.png" alt="Novapro Lab™" width="320">
+    <img src="./assets/novapro-lab-logo.png" alt="Novapro Lab™" width="360">
   </a>
 </p>
 
