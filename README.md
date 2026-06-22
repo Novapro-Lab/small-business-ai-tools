@@ -1,3 +1,40 @@
+<p align="center">
+  <a href="https://novaprolab.com">
+    <img src="assets/novapro-lab-logo.png" alt="Novapro Lab™" width="320">
+  </a>
+</p>
+
+<h1 align="center">Small Business AI Tools</h1>
+
+<p align="center">
+  <strong>Practical, dependency-free tools and templates for small business lead management, follow-up, customer communication, segmentation, and operational clarity.</strong>
+</p>
+
+<p align="center">
+  Built and maintained by <strong><a href="https://novaprolab.com">Novapro Lab™</a></strong>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/company-Novapro%20Lab-111827?style=for-the-badge" alt="Novapro Lab™">
+  <img src="https://img.shields.io/badge/focus-Small%20Business%20Tools-2563eb?style=for-the-badge" alt="Small Business Tools">
+  <img src="https://img.shields.io/badge/license-MIT-22c55e?style=for-the-badge" alt="MIT License">
+  <img src="https://img.shields.io/badge/dependencies-none-ef7d22?style=for-the-badge" alt="No Dependencies">
+  <img src="https://img.shields.io/badge/privacy-local%20first-8b5cf6?style=for-the-badge" alt="Local First">
+</p>
+
+<p align="center">
+  <a href="#overview">Overview</a> ·
+  <a href="#whats-included">Tools</a> ·
+  <a href="#quick-start">Quick Start</a> ·
+  <a href="#privacy-first-principles">Privacy</a> ·
+  <a href="#responsible-ai-note">Responsible AI</a> ·
+  <a href="#license">License</a>
+</p>
+
+---
+
+## Overview
+
 # Small Business AI Tools
 
 Practical, dependency-free tools and templates to help small businesses improve **lead management**, **sales follow-up**, **customer communication**, **customer segmentation**, and **operational clarity**.
